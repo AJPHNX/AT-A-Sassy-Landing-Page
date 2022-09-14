@@ -1,3 +1,7 @@
+@import "utilities";
+@import "btnConfig";
+@import "config";
+
 
 * {
   box-sizing: border-box;
@@ -14,21 +18,79 @@ body {
 img {
   border-radius: 50%;
 }
+header{
+  display: flex;
+
+}
 
 a {
   text-decoration: none;
+  color: $primary-text-color;
 }
-
+$hero-image-width: 400px;
+$test-border1: 1px solid $test-color1;
+$test-border2: 1px dotted $test-color2;
 .hero {
   // This is where the bulk of the SCSS styling needs to be done
-
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width:100%;
+    background-color: $primary-color;
+    color: $primary-text-color;
+    margin:auto;
+    border: $test-border2;
+    // width: 100%;
+    // position: 
   // Take a look at the other files we've built already. How can they be useful here?
+  .box{
+    margin: 0;
+    border: $test-border1;
+    min-width: 100%;
+    justify-content: space-between;
+    nav{
+      display: flex;
+      flex-direction: row;
+      margin: 10px;
+      align-items: center;
+      justify-content: space-between;
 
+    }
+    .banner{
+      width: 50%;
+      border: $test-border2;
+    }
+ 
+    ul{
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      border: $test-border2;
+      list-style: none;
+      justify-content: space-between;
+      width: 50%;
+      right:0px;
+    }
+  }
+  .hero-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    align-items: center;
+    width: 60%;
+    // max-width: 100%;
+    
+    img{
+      width: $hero-image-width;
+      height: auto;
+    }
+  }
   // Also, take time to review the features of SCSS we've already covered:
   // 1. $variables
   // 2. nesting (dont forget about the ampersand (&) parent selector!)
   // 3. At-Rules
 }
+
 
 // This code is related to some of the aspects of SCSS we have yet to cover.
 // While you don't have to mess with it, it would be advisable to attempt to understand its functionality.
