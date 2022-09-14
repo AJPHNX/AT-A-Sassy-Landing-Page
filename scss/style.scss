@@ -2,6 +2,9 @@
 @import "btnConfig";
 @import "config";
 
+$hero-image-width: 400px;
+$test-border1: 1px solid $test-color1;
+$test-border2: 1px dotted $test-color2;
 
 * {
   box-sizing: border-box;
@@ -25,29 +28,29 @@ header{
 
 a {
   text-decoration: none;
-  color: $primary-text-color;
+  color: text-color-picker($primary-color);
 }
-$hero-image-width: 400px;
-$test-border1: 1px solid $test-color1;
-$test-border2: 1px dotted $test-color2;
+
 .hero {
   // This is where the bulk of the SCSS styling needs to be done
     display: flex;
     flex-direction: row;
     position: relative;
     width:100%;
-    background-color: $primary-color;
-    color: $primary-text-color;
     margin:auto;
-    border: $test-border2;
+    // border: $test-border2;
+    color: text-color-picker($primary-color);
+    @include set-bg($primary-color);
     // width: 100%;
     // position: 
   // Take a look at the other files we've built already. How can they be useful here?
   .box{
     margin: 0;
-    border: $test-border1;
+    // border: $test-border1;
     min-width: 100%;
     justify-content: space-between;
+    
+
     nav{
       display: flex;
       flex-direction: row;
@@ -58,14 +61,14 @@ $test-border2: 1px dotted $test-color2;
     }
     .banner{
       width: 50%;
-      border: $test-border2;
+      // border: $test-border2;
     }
  
     ul{
       display: flex;
       flex-direction: row;
       position: relative;
-      border: $test-border2;
+      // border: $test-border2;
       list-style: none;
       justify-content: space-between;
       width: 50%;
@@ -77,9 +80,7 @@ $test-border2: 1px dotted $test-color2;
     flex-direction: row;
     flex-wrap: none;
     align-items: center;
-    width: 60%;
-    // max-width: 100%;
-    
+ 
     img{
       width: $hero-image-width;
       height: auto;

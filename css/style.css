@@ -54,7 +54,7 @@ header {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: white;
 }
 
 .hero {
@@ -62,14 +62,13 @@ a {
   flex-direction: row;
   position: relative;
   width: 100%;
-  background-color: #000814;
-  color: #ffffff;
   margin: auto;
-  border: 1px dotted red;
+  color: white;
+  background-color: #000814;
+  color: white;
 }
 .hero .box {
   margin: 0;
-  border: 1px solid blue;
   min-width: 100%;
   justify-content: space-between;
 }
@@ -82,13 +81,11 @@ a {
 }
 .hero .box .banner {
   width: 50%;
-  border: 1px dotted red;
 }
 .hero .box ul {
   display: flex;
   flex-direction: row;
   position: relative;
-  border: 1px dotted red;
   list-style: none;
   justify-content: space-between;
   width: 50%;
@@ -99,7 +96,6 @@ a {
   flex-direction: row;
   flex-wrap: none;
   align-items: center;
-  width: 60%;
 }
 .hero .hero-content img {
   width: 400px;
